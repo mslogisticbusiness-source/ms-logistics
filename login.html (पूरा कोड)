@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login – MS Logistic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <img src="assets/logo.png" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rate-calculator.html">Rate Calculator</a>
+        <a href="login.html" class="active">Login</a>
+    </nav>
+</header>
+
+<section class="calculator-box">
+    <h2>Login to Dashboard</h2>
+
+    <form class="calc-form">
+        <label>Email / Mobile</label>
+        <input type="text" placeholder="Enter Email or Mobile">
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password">
+
+        <button type="button">Login</button>
+    </form>
+
+    <p style="margin-top:15px; text-align:center;">
+        Don't have an account?
+        <a href="#" style="color:#007bff; text-decoration:none;">Register</a>
+    </p>
+</section>
+
+</body>
+</html>
