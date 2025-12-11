@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Order Success – MS Logistic</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <img src="assets/logo.png" class="logo">
+  <nav><a href="dashboard.html">Dashboard</a><a href="order-list.html">Orders</a></nav>
+</header>
+
+<section class="calculator-box">
+  <h2>Order Created Successfully</h2>
+  <div class="preview-box">
+    <p><strong>AWB:</strong> <span id="awbsuccess">153854853300026</span></p>
+    <p><strong>Order ID:</strong> <span>12345</span></p>
+    <p><strong>Courier:</strong> <span>Shadowfax</span></p>
+    <p><strong>Amount Charged:</strong> ₹130</p>
+
+    <div style="margin-top:18px;">
+      <a href="order-list.html" class="btn">View Orders</a>
+      <a href="track-order.html?awb=153854853300026" class="btn" style="background:#fff;color:#007bff;border:1px solid #007bff;">Track Shipment</a>
+    </div>
+  </div>
+</section>
+</body>
+</html>
