@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Track Order – MS Logistic</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <img src="assets/logo.png" class="logo">
+  <nav><a href="dashboard.html">Dashboard</a><a href="track-order.html" class="active">Track</a></nav>
+</header>
+
+<section class="calculator-box">
+  <h2>Track Order</h2>
+  <div class="preview-box">
+    <label>Enter AWB</label>
+    <input type="text" id="track-awb" placeholder="AWB number">
+    <button class="btn" onclick="document.getElementById('result').style.display='block'">Track</button>
+
+    <div id="result" style="display:none;margin-top:12px;">
+      <p><strong>Status:</strong> In Transit</p>
+      <p><strong>Last Update:</strong> Scanned at Hub</p>
+    </div>
+  </div>
+</section>
+</body>
+</html>
