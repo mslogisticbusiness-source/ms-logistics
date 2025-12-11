@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cancel Order – MS Logistic</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <img src="assets/logo.png" class="logo">
+  <nav><a href="dashboard.html">Dashboard</a><a href="order-list.html">Orders</a></nav>
+</header>
+
+<section class="calculator-box">
+  <h2>Cancel / RTO Request</h2>
+  <div class="preview-box">
+    <p>Order: <strong id="co-order">12345</strong></p>
+    <p>AWB: <strong id="co-awb">153854853300026</strong></p>
+
+    <label>Reason</label>
+    <select id="cancel-reason">
+      <option value="customer_request">Customer requested</option>
+      <option value="incorrect_address">Incorrect address</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label>Comments</label>
+    <textarea id="cancel-comments" placeholder="Optional details"></textarea>
+
+    <button class="btn" onclick="requestCancel()">Submit Cancel Request</button>
+  </div>
+</section>
+
+<script>
+function requestCancel(){
+  alert("Cancel request submitted. Backend will process RTO/refund as per rules.");
+}
+</script>
+</body>
+</html>
