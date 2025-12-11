@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Order – MS Logistic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <img src="assets/logo.png" class="logo">
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="create-order.html" class="active">Create Order</a>
+        <a href="order-history.html">Orders</a>
+        <a href="wallet.html">Wallet</a>
+        <a href="index.html">Logout</a>
+    </nav>
+</header>
+
+<section class="form-section">
+
+    <h2>Create Shipment</h2>
+
+    <div class="form-card">
+
+        <h3>Pickup Address</h3>
+        <input type="text" placeholder="Sender Name">
+        <input type="text" placeholder="Sender Phone">
+        <input type="text" placeholder="Pickup Address">
+        <input type="number" placeholder="Pickup Pincode">
+
+        <h3>Delivery Address</h3>
+        <input type="text" placeholder="Customer Name">
+        <input type="text" placeholder="Customer Phone">
+        <input type="text" placeholder="Full Delivery Address">
+        <input type="number" placeholder="Delivery Pincode">
+
+        <h3>Parcel Details</h3>
+        <input type="text" placeholder="Product Name">
+        <input type="number" placeholder="Product Value (₹)">
+        <input type="number" placeholder="Weight (KG)">
+        <input type="number" placeholder="Length (CM)">
+        <input type="number" placeholder="Width (CM)">
+        <input type="number" placeholder="Height (CM)">
+
+        <h3>Payment Mode</h3>
+        <select>
+            <option value="PPD">Prepaid</option>
+            <option value="COD">Cash on Delivery</option>
+        </select>
+
+        <button class="btn" onclick="checkRate()">Check Best Courier Rate</button>
+
+        <div id="rateBox" class="rate-box" style="display:none;">
+            <h3>Available Courier Partners</h3>
+
+            <div class="rate-row">
+                <span>Delhivery – Surface</span>
+                <span>₹ 80</span>
+                <button class="select-btn">Select</button>
+            </div>
+
+            <div class="rate-row">
+                <span>Shadowfax – Air</span>
+                <span>₹ 120</span>
+                <button class="select-btn">Select</button>
+            </div>
+
+            <div class="rate-row">
+                <span>Ekart – Surface</span>
+                <span>₹ 99</span>
+                <button class="select-btn">Select</button>
+            </div>
+
+        </div>
+
+        <button class="btn create-btn">Create Order</button>
+
+    </div>
+
+</section>
+
+<script>
+function checkRate() {
+    document.getElementById("rateBox").style.display = "block";
+}
+</script>
+
+</body>
+</html>
