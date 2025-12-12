@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Create Order - MS Logistic</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="header"><img src="assets/images/logo_black.png" class="logo"><nav class="nav"><a href="index.html">Home</a><a href="dashboard.html">Dashboard</a></nav></header>
+<main class="container">
+  <h2>Create Order</h2>
+  <form class="form" onsubmit="event.preventDefault(); alert('Demo: calculate best rates and create order (backend required)')">
+    <label>Pickup pincode</label><input class="input" required placeholder="e.g. 110001">
+    <label>Delivery pincode</label><input class="input" required placeholder="e.g. 560001">
+    <label>Weight (kg)</label><input class="input" required placeholder="0.5">
+    <label>Dimensions (L×W×H cm)</label><input class="input" placeholder="30x20x10">
+    <label>Package value (₹)</label><input class="input" placeholder="1000">
+    <button class="btn">Check Best Rate</button>
+    <p class="small">After checking rates, you will be taken to preview to confirm and create order.</p>
+  </form>
+</main>
+<footer class="footer">© MS Logistic</footer>
+</body>
+</html>
