@@ -1,0 +1,43 @@
+/* style.css - main styling used by all pages */
+:root{
+  --primary:#0b63d6;
+  --dark:#0a0a0a;
+  --muted:#666;
+  --bg:#ffffff;
+  --accent:#f4f7fb;
+  --maxw:1100px;
+}
+*{box-sizing:border-box}
+body{
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin:0; color:var(--dark); background:var(--bg); -webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--maxw); margin:0 auto; padding:18px;}
+.header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--bg);border-bottom:1px solid #eee;position:sticky;top:0;z-index:10;}
+.logo{height:46px;}
+.nav{display:flex;gap:12px;align-items:center}
+.nav a{color:var(--dark); text-decoration:none; padding:8px 10px; border-radius:6px; font-weight:600}
+.nav a.active{background:var(--accent)}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--primary);color:#fff;text-decoration:none;font-weight:600}
+.hero{background:linear-gradient(180deg,#f7fbff,white); padding:40px 18px;text-align:center;border-bottom:1px solid #eee}
+.hero h1{margin:0;font-size:28px}
+.hero p{color:var(--muted);margin:10px 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.card{background:#fff;border:1px solid #eee;padding:12px;border-radius:8px}
+.form{max-width:540px;margin:12px auto}
+.input, textarea, select{width:100%;padding:10px;border-radius:6px;border:1px solid #ddd;margin-bottom:10px}
+.input:focus, textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(11,99,214,0.08)}
+.footer{padding:18px;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid #f1f1f1;margin-top:28px}
+
+/* responsive header nav collapse */
+@media (max-width:720px){
+  .nav{gap:8px}
+  .hero h1{font-size:22px}
+  .logo{height:40px}
+}
+
+/* table */
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:10px;border-bottom:1px solid #eee;text-align:left}
+.small{font-size:13px;color:var(--muted)}
+.center{text-align:center}
