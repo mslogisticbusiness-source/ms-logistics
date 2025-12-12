@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MS Logistic & Cargo">
+  <defs>
+    <style type="text/css"><![CDATA[
+      .brand { font-family: "DejaVu Sans", "Arial", sans-serif; font-weight:700; font-size:72px; fill:#ffffff; }
+      .tag   { font-family: "DejaVu Sans", "Arial", sans-serif; font-weight:400; font-size:28px; fill:#ffffff; }
+      .mark  { fill:#ffffff; }
+    ]]></style>
+  </defs>
+
+  <!-- Optional simple square+truck mark on the left (white version for dark header) -->
+  <g transform="translate(30,30)" aria-hidden="true">
+    <!-- square -->
+    <rect x="0" y="0" width="120" height="120" rx="12" ry="12" class="mark" />
+    <!-- simple truck silhouette (transparent cutout) -->
+    <g transform="translate(12,18)" fill="#000000" opacity="0.0">
+      <rect x="58" y="32" width="34" height="28" rx="3" />
+      <rect x="4" y="26" width="60" height="30" />
+      <circle cx="28" cy="66" r="10"/>
+      <circle cx="78" cy="66" r="10"/>
+    </g>
+    <!-- to visually show truck in white, draw it as white shapes -->
+    <g transform="translate(12,18)" fill="#ffffff">
+      <rect x="58" y="32" width="34" height="28" rx="3" />
+      <rect x="4" y="26" width="60" height="30" />
+      <circle cx="28" cy="66" r="10"/>
+      <circle cx="78" cy="66" r="10"/>
+    </g>
+  </g>
+
+  <!-- Text -->
+  <g transform="translate(190,120)">
+    <text class="brand">MS LOGISTIC</text>
+    <text class="tag" x="0" y="48">Courier &amp; Cargo Service</text>
+  </g>
+</svg>
