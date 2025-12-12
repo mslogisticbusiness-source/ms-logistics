@@ -14,7 +14,10 @@ body{
 }
 .container{max-width:var(--maxw); margin:0 auto; padding:18px;}
 .header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--bg);border-bottom:1px solid #eee;position:sticky;top:0;z-index:10;}
-.logo{height:46px;}
+.logo{
+  height:80px;
+  width:auto;
+}
 .nav{display:flex;gap:12px;align-items:center}
 .nav a{color:var(--dark); text-decoration:none; padding:8px 10px; border-radius:6px; font-weight:600}
 .nav a.active{background:var(--accent)}
@@ -33,8 +36,10 @@ body{
 @media (max-width:720px){
   .nav{gap:8px}
   .hero h1{font-size:22px}
-  .logo{height:40px}
-}
+  .logo{
+  height:70px;
+  width:auto;
+  }
 
 /* table */
 .table{width:100%;border-collapse:collapse}
